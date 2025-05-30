@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9100923144294886721}
   - component: {fileID: 9100923144294886720}
   - component: {fileID: 9100923144294886783}
-  - component: {fileID: 9100923144294886782}
+  - component: {fileID: 5251164545951839108}
   m_Layer: 0
   m_Name: CratePrefab
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &9100923144294886782
+--- !u!114 &5251164545951839108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,9 +72,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9100923144294886781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4836a9f0cc228d44bb586ebc0a6fce3, type: 3}
+  m_Script: {fileID: 11500000, guid: e5ade8b02c4be424390239534cac4444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 11
+  moneyManager: {fileID: 0}
 --- !u!1001 &9100923145697396646
 PrefabInstance:
   m_ObjectHideFlags: 0
