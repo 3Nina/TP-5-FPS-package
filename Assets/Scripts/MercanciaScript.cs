@@ -18,8 +18,10 @@ public class MercanciaScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))  // compara tags porque es más eficiente. para que ande hay que cambiar la tag de player
         {
-            moneyManager.UpdateMoney(-cost); // llama a la función que creamos --> UpdateMoney en el script moneyManager. 
-            Destroy(gameObject);
+            if (moneyManager.UpdateMoney(-cost)) // llama a la función que creamos --> UpdateMoney en el script moneyManager.  Luego de chequear el tag, llama a la función UpdateMoney y si se ejecuta la condición destruye el objeto con el que se hizo contacto
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

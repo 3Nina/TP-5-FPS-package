@@ -12,16 +12,19 @@ public class MoneyManager : MonoBehaviour  // se vuelve el script en una clase¿
         uiManager = FindObjectOfType<UiManager>();
     }
 
-    public void UpdateMoney(float amount)
+    public bool UpdateMoney(float amount)
     {
         if (money + amount < 0) // si la cant de plata es menor a la compra no deja comprar. Premite vender si la venta vale mas que la cant de money.
         {
             // impedir la compra
             Debug.Log("Dinero insuficiente");
-        } else
+            return false;  // nos devuelve que es falso
+        } 
+        else
         {
             money += amount;  // le suma la cant de money a amount y se guara (actualiza) el valor de la variable money
             uiManager.UpdateMoneyText(money.ToString()); // llama la función del script UiManager  (Lo conectamos antes)
+            return true; 
         }
         
     }
