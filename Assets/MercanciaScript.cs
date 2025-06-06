@@ -5,7 +5,9 @@ using UnityEngine;
 public class MercanciaScript : MonoBehaviour
 {
     public float cost = 5;
-    public MoneyManager moneyManager; // para conectarse con el money manager del player
+
+    // para conectar con otro script hay que crear una variable del tipo del que me quiero conectar
+    public MoneyManager moneyManager; // para conectarse con MoneyManager que está em el player
 
      void Start()
     {

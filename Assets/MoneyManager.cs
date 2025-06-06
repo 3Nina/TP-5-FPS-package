@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoneyManager : MonoBehaviour
+public class MoneyManager : MonoBehaviour  // se vuelve el script en una clase¿  --> por eso se conecta con tipos  (tiene que ser public)
 {
     public float money;
+    public UiManager uiManager;
+
+    void Start()
+    {
+        uiManager = FindObjectOfType<UiManager>();
+    }
 
     public void UpdateMoney(float amount)
     {
@@ -15,6 +21,7 @@ public class MoneyManager : MonoBehaviour
         } else
         {
             money += amount;  // le suma la cant de money a amount y se guara (actualiza) el valor de la variable money
+            uiManager.UpdateMoneyText(money.ToString()); // llama la función del script UiManager  (Lo conectamos antes)
         }
         
     }

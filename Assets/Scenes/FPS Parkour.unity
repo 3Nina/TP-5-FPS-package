@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 100
+  uiManager: {fileID: 1688771121}
 --- !u!114 &104974597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,7 +2213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 678639a9e03244642b4631281f41a102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtMoney: {fileID: 0}
+  txtMoney: {fileID: 1315626776}
 --- !u!4 &1688771122
 Transform:
   m_ObjectHideFlags: 0
@@ -2991,12 +2992,12 @@ PrefabInstance:
     - target: {fileID: 2888930025077014596, guid: 15d55306f3f21244ab68b65a0721363c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.22304493
       objectReference: {fileID: 0}
     - target: {fileID: 2888930025077014596, guid: 15d55306f3f21244ab68b65a0721363c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9748082
       objectReference: {fileID: 0}
     - target: {fileID: 2888930025077014596, guid: 15d55306f3f21244ab68b65a0721363c,
         type: 3}
@@ -3016,7 +3017,7 @@ PrefabInstance:
     - target: {fileID: 2888930025077014596, guid: 15d55306f3f21244ab68b65a0721363c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 25.776001
       objectReference: {fileID: 0}
     - target: {fileID: 8790190911972093596, guid: 15d55306f3f21244ab68b65a0721363c,
         type: 3}
