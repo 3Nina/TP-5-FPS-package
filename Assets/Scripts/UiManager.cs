@@ -15,6 +15,6 @@ public class UiManager : MonoBehaviour
 
     public void UpdateHealthText(string health)
     {
-        txtHealth.text = "<3" + health;
+        txtHealth.text ="Health: " + health;
     }
 }

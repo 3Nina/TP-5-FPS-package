@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DamageManager : MonoBehaviour
 {
@@ -14,13 +15,17 @@ public class DamageManager : MonoBehaviour
 
     public bool HealthUpdate(int damageInflicted)
     {
-        if (health <= damageInflicted)
+        if (health + damageInflicted == 0)
         {
             Debug.Log("Moriste");
+            SceneManager.LoadScene("FPS Parkour");
             return false;  // nos devuelve que es falso
+        } else
+        {
+            health += damageInflicted;
+            uiManager.UpdateHealthText(health.ToString());
+            return true;
         }
-        health -= damageInflicted;
-        uiManager.UpdateHealthText(health.ToString());
-        return true;
+        
     }
 }
